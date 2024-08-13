@@ -1,0 +1,13 @@
+#conteudo {
+    display: none;
+    margin-top: 10px;
+}
+#verMenos {
+    display: none;
+}
+
+.card {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}

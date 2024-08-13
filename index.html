@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="conteudo">
+        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>        <div class="card">
+            teste
+        </div>
+        <div class="card">
+            teste
+        </div>
+        
+        <p>Este é o conteúdo que será mostrado ou ocultado quando os botões forem clicados. Você pode adicionar mais texto, imagens ou qualquer outro tipo de conteúdo que desejar.</p>
+    </div>
+
+    <h2>Seção de Conteúdo</h2>
+    <button id="verMais">Ver Mais</button>
+    <button id="verMenos">Ver Menos</button>
+
+    <script>
+        const verMaisBtn = document.getElementById("verMais");
+        const verMenosBtn = document.getElementById("verMenos");
+        const conteudo = document.getElementById("conteudo");
+
+        verMaisBtn.addEventListener("click", () => {
+            conteudo.style.display = "block";
+            verMaisBtn.style.display = "none";
+            verMenosBtn.style.display = "inline-block";
+        });
+
+        verMenosBtn.addEventListener("click", () => {
+            conteudo.style.display = "none";
+            verMaisBtn.style.display = "inline-block";
+            verMenosBtn.style.display = "none";
+        });
+    </script>
+
+    
+</body>
+</html>
